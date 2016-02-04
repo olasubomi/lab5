@@ -16,7 +16,14 @@
 </head>
 
 <body>
+	<div class="container">
 	<h1>My HCI Friends</h1>
+
+	<div class="project" id="{{name}}">
+	<a href = "{{imageURL}}" class="thumbnail">
+	<h2>Forever Aone</h2>
+	<h3> {{description}}</h3>
+	</div>
 
 	<form id="addFriendForm" role="form" method="get" action="/add">
 		<h3>Add a friend</h3>
@@ -30,5 +37,11 @@
 	    </div>
 	    <input type="submit" id="submitBtn" class="btn btn-default" value="Add the friend"></input>
 	</form>
+
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/hci-friends.js"></script>
+
+	</div>
 </body>
 </html>
